@@ -1,5 +1,4 @@
--- Create a set that only contains the classes for ”Mercedes-Benz”
 SELECT cars.brand,
-       cars.model
+       SUBSTR(cars.model, 1, 1) || "-class" AS model
 FROM registered_cars AS cars
-WHERE cars.brand = "MERCEDES-BENZ" 
+WHERE cars.brand = "MERCEDES-BENZ"
