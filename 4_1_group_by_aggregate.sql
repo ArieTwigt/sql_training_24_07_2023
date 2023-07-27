@@ -8,5 +8,5 @@ SELECT cars.brand,
        MAX(cars.price) AS max_price
 FROM registered_cars AS cars
 GROUP BY 1, 2, 3
-ORDER BY 4 DESC
-LIMIT 10
+ORDER BY 4 DESC, 5 DESC
+LIMIT 100
