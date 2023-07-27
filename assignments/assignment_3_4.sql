@@ -2,7 +2,7 @@
 
 SELECT COUNT(*) AS aantal
 FROM (
-       SELECT DISTINCT cars.brand, cars.model
-       FROM registered_cars AS cars
-       WHERE seats > 7
-)
+      SELECT DISTINCT cars.brand, cars.model
+      FROM registered_cars AS cars
+      WHERE seats > 7
+     )
